@@ -571,4 +571,173 @@ body {
     box-shadow: 0 0 20px #1b86f9;
     cursor: pointer;
   }
+  .album {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .album .status-main {
+    border: none;
+    display: flex;
+  }
+  
+  .album .intro-menu {
+    margin-bottom: auto;
+    margin-top: 5px;
+  }
+  
+  .album-detail {
+    width: calc(100% - 110px);
+  }
+  
+  .album-title span {
+    color: #1771d6;
+    cursor: pointer;
+  }
+  
+  .album-date {
+    font-size: 15px;
+    color: #595c6c;
+    margin-top: 4px;
+  }
+  
+  .album-content {
+    padding: 0 20px 20px;
+  }
+  
+  .album-photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .album-photos {
+    display: flex;
+    margin-top: 20px;
+    max-height: 30vh;
+  }
+  
+  .album-photos > .album-photo {
+    width: 50%;
+  }
+  
+  .album-right {
+    width: 50%;
+    margin-left: 10px;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .album-right .album-photo {
+    height: calc(50% - 10px);
+  }
+  
+  .album-actions {
+    padding: 0 20px 20px;
+  }
+  
+  .album-action {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #a2a4b4;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .album-action:hover {
+    color: #fff;
+  }
+  
+  .album-action svg {
+    width: 16px;
+    margin-right: 6px;
+  }
+  
+  .account-button {
+    border: 0;
+    background: 0;
+    color: #64677a;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .account-button svg {
+    width: 20px;
+  }
+  
+  .account-button:not(.right-side-button) + .account-button::before {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    background-color: #1b86f8;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    content: "";
+    border: 2px solid #f0f0f0; /* Replace with actual background color */
+  }
+  
+  .account-profile {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .account-user {
+    display: inline-flex;
+    align-items: center;
+    color: #64677a;
+    font-weight: 600;
+  }
+  
+  .account-user span {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  
+  .account {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0; /* Replace with actual background color */
+    z-index: 3;
+    flex-shrink: 0;
+  }
+  
+  .stories {
+    border-bottom: 1px solid #dcdcdc; /* Replace with actual border color */
+  }
+  
+  .stories .user-img {
+    border: 2px solid #e2b96c;
+  }
+  
+  .stories .album-date {
+    font-family: 'Your Font Name'; /* Replace with actual font family */
+  }
+  
+  .user-status {
+    background-color: #7fd222;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  
+  .user-status.offline {
+    background-color: #606a8d;
+  }
+  
+  .user-status.idle {
+    background-color: #dd1c20;
+  }
   
