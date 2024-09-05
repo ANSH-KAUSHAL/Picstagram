@@ -491,6 +491,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 500;
     border-radius: 20px;
+    
   }
   
   .status-menu-item.active,
@@ -527,6 +528,7 @@ body {
     border-bottom: 1px solid #dcdcdc; /* Replace with actual border color */
     padding-bottom: 20px;
     flex-wrap: wrap;
+  
   }
   
   .status-textarea {
@@ -843,7 +845,7 @@ body {
       display: none;
     }
   }
-  
+
   ::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;
@@ -864,4 +866,3 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #373e57;
   }
-  
