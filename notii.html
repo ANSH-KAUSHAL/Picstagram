@@ -41,7 +41,7 @@ body {
 
     font-size: 2.5rem;
     margin-bottom: 30px;
-    margin-top: 4px;
+    margin-top: 40px;
     text-align: center;
     color: #ffffff;
     letter-spacing: 1.5px;
@@ -83,6 +83,12 @@ body {
     /* animation: pulse 2s infinite; */
 }
 
+.user-avatar img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
 /* Notification Text */
 .notification-text {
     flex-grow: 1;
@@ -101,11 +107,11 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(30px);
     }
 }
 
@@ -142,43 +148,43 @@ body {
         <h1 class="notification-title">Notifications</h1> <hr> <br>
         <div class="notification-list">
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User123 liked your photo.</p>
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">User1 liked your photo.</p>
                 <span class="notification-time">2h ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User456 started following you.</p>
+                <div class="user-avatar"><img src="./img/avatar4.jpg" alt=""></div>
+                <p class="notification-text">User4 started following you.</p>
                 <span class="notification-time">5h ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User789 mentioned you in a comment.</p>
+                <div class="user-avatar"><img src="./img/avatar3.png" alt=""></div>
+                <p class="notification-text">User7 mentioned you in a comment.</p>
                 <span class="notification-time">1d ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User987 tagged you in a post.</p>
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">User9 tagged you in a post.</p>
                 <span class="notification-time">2d ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User654 sent you a direct message.</p>
+                <div class="user-avatar"><img src="./img/avatar2.jpg" alt=""></div>
+                <p class="notification-text">User6 sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User321 shared your story.</p>
+                <div class="user-avatar"><img src="./img/avatar3.png" alt=""></div>
+                <p class="notification-text">User3 shared your story.</p>
                 <span class="notification-time">5d ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User654 sent you a direct message.</p>
+                <div class="user-avatar"><img src="./img/avatar2.jpg" alt=""></div>
+                <p class="notification-text">User6 sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"></div>
-                <p class="notification-text">User654 sent you a direct message.</p>
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">User6 sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
         </div>
