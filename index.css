@@ -11,9 +11,9 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #373e57;
-  color: #ccc8db;
+  color: #c7c7c7;
 }
 
 .container {
@@ -149,7 +149,8 @@ body {
 }
 
 .follow-me:hover .follow-text {
-  transform: translateY(100%);
+  color: white;
+  text-shadow: 0px 0px 5px white;
 }
 
 .developer {
