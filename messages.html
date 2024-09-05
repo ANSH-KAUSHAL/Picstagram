@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Themed Chat</title>
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Sidebar for contacts -->
+    <div class="sidebar">
+      <div class="contact active">
+        <img src="https://via.placeholder.com/50" alt="User 1">
+        <div class="contact-info">
+          <h3>User 1</h3>
+          <p>Last message...</p>
+        </div>
+      </div>
+      <div class="contact">
+        <img src="https://via.placeholder.com/50" alt="User 2">
+        <div class="contact-info">
+          <h3>User 2</h3>
+          <p>Last message...</p>
+        </div>
+      </div>
+      <!-- More contacts here -->
+    </div>
+
+    <!-- Chat section -->
+    <div class="chat-section">
+      <div class="chat-header">
+        <h2>Chat with User 1</h2>
+      </div>
+
+      <!-- Messages -->
+      <div class="chat-box">
+        <div class="message received">
+          <p>Hey! How are you?</p>
+          <span>10:00 AM</span>
+        </div>
+        <div class="message sent">
+          <p>I'm good, thanks! You?</p>
+          <span>10:02 AM</span>
+        </div>
+        <!-- More messages here -->
+      </div>
+
+      <!-- Message input -->
+      <div class="message-input">
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
