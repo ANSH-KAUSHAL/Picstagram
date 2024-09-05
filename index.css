@@ -179,6 +179,7 @@ body {
 
 .search-bar {
   height: 60px;
+  border-radius: 5px;
   background-color: #151728;
   z-index: 3;
   position: relative;
@@ -577,7 +578,8 @@ body {
   }
   .album {
     padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 15rem;
+    margin-left: -26rem;
   }
   
   .status-menu {
