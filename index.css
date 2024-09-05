@@ -1,34 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Source+Sans+Pro:300,400,600,700&display=swap");
 
-* {
+/*  {
   outline: none;
-  box-sizing: border-box;
+   box-sizing: border-box;
   margin: 0;
+  
   padding: 0;
 }
 
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   -webkit-font-smoothing: antialiased;
-}
+} */
+
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #373e57;
   color: #c7c7c7;
+
 }
 
 .container {
   background-color: #151728;
   display: flex;
-  /* max-width: 1600px; */
+  max-width: 200rem;
   height: 100vh;
   overflow: hidden;
   margin: 0 auto;
 }
 
 .left-side {
-  width: 260px;
+  width: 360px;
   border-right: 1px solid #272a3a;
   display: flex;
   flex-direction: column;
@@ -47,7 +50,7 @@ body {
     overflow: hidden;
   }
 }
-
+/* 
 .right-side {
   width: 280px;
   flex-shrink: 0;
@@ -71,11 +74,12 @@ body {
   .right-side.active {
     transform: translatex(0);
   }
-}
+} */
 
 .main {
   flex-grow: 1;
   display: flex;
+  width: 400rem;
   flex-direction: column;
   background-color: #181d2f;
 }
@@ -103,13 +107,14 @@ body {
 }
 
 .side-wrapper {
-  padding: 30px;
+  padding: 40px;
+  margin-left: 2.1rem;
 }
 
 .side-menu {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  font-size: 17px;
   white-space: nowrap;
 }
 
@@ -181,7 +186,7 @@ body {
   height: 60px;
   border-radius: 5px;
   background-color: #151728;
-  z-index: 3;
+  z-index: 4;
   position: relative;
 }
 
@@ -191,9 +196,9 @@ body {
   display: block;
   background-color: transparent;
   border: none;
-  padding: 0 54px;
+  padding: 0 57px;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 18px;
   background-position: 25px 50%;
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
