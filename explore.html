@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Explore Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #151728;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar:hover, .search-bar:focus {
+            width: 350px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Parallax Section */
+        .parallax {
+            background-image: url('./img/working.JPG');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .parallax h2 {
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            z-index: 1;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        /* Post Section */
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 10px;
+            margin-top: 100px;
+        }
+
+        .post {
+            width: 300px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .post:hover img {
+            transform: scale(1.05);
+        }
+
+        .post h3 {
+            padding: 15px;
+            font-size: 20px;
+            color: #151728;
+        }
+
+        .post p {
+            padding: 0 15px 15px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Second Parallax */
+        .parallax-second {
+            background-image: url('./img/working2.JPG');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax-second::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .parallax-second h2 {
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            z-index: 1;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with Search Bar -->
+    <div class="navbar">
+        <h1>Explore</h1>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+
+    <!-- First Parallax Section -->
+    <div class="parallax">
+        <h2>Discover the World</h2>
+    </div>
+
+    <!-- Posts Section -->
+    <div class="posts">
+        <div class="post">
+            <img src="./img/professional.JPG" alt="Post 1">
+            <h3>Post 1</h3>
+            <p>Description of post 1.</p>
+        </div>
+        <div class="post">
+            <img src="./img/red coat.jpeg" alt="Post 2">
+            <h3>Post 2</h3>
+            <p>Description of post 2.</p>
+        </div>
+        <div class="post">
+            <img src="./img/working.JPG" alt="Post 3">
+            <h3>Post 3</h3>
+            <p>Description of post 3.</p>
+        </div>
+        <div class="post">
+            <img src="./img/professional.JPG" alt="Post 1">
+            <h3>Post 1</h3>
+            <p>Description of post 1.</p>
+        </div>
+        <div class="post">
+            <img src="./img/red coat.jpeg" alt="Post 2">
+            <h3>Post 2</h3>
+            <p>Description of post 2.</p>
+        </div>
+        <div class="post">
+            <img src="./img/working.JPG" alt="Post 3">
+            <h3>Post 3</h3>
+            <p>Description of post 3.</p>
+        </div>
+        <div class="post">
+            <img src="./img/professional.JPG" alt="Post 1">
+            <h3>Post 1</h3>
+            <p>Description of post 1.</p>
+        </div>
+        <div class="post">
+            <img src="./img/working.JPG" alt="Post 3">
+            <h3>Post 3</h3>
+            <p>Description of post 3.</p>
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+
+    <!-- Second Parallax Section -->
+    <div class="parallax-second">
+        <h2>Stay Inspired</h2>
+    </div>
+
+</body>
+</html>
