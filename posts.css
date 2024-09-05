@@ -10,6 +10,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Base Styles */
 
+
 :root {
     font-size: 10px;
 }
@@ -23,8 +24,8 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
-    background-color: #fafafa;
-    color: #262626;
+    background-color: #151728;
+    color: white;
     padding-bottom: 3rem;
 }
 
@@ -419,11 +420,13 @@ input[type=checkbox], input[type=radio] {
     display: flex;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    /* border: 10px solid black; */
+    justify-content:space-around;
 }
 
 .tabBox .tab{
-    margin-left: 15rem;
-    margin-right: 12rem;
+    /* margin-left: 15rem;
+    margin-right: 12rem; */
     margin-bottom: 0.75rem;
 }
 
