@@ -118,7 +118,7 @@ body {
   /* Message input section */
   .message-input {
     padding: 15px;
-    background-color: #2c2c2c;
+    background-color: #020013;
     display: flex;
     border-top: 1px solid #333;
   }
@@ -126,7 +126,7 @@ body {
   .message-input input {
     width: 100%;
     padding: 10px;
-    background-color: #1f1f1f;
+    background-color: #0e0a2e;
     border: none;
     color: #e0e0e0;
     border-radius: 5px;
@@ -139,7 +139,7 @@ body {
   
   .message-input button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0021b4;
     border: none;
     color: #fff;
     border-radius: 5px;
