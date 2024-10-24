@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Yeh apna official hai(FaTNeeK_)</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="icon" type="image/x-icon" href="/pics/instagram.jpg">
+  <link rel="stylesheet" href="lightbox2/css/lightbox.css">
+  <script src="lightbox2/js/lightbox.min.js"></script>
+  <link rel="stylesheet" href="InstagramStyle.css" />
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <img src="/pics/images.png" class="brand-img" alt="">
+      <!-- <input type="text" class="search-box" placeholder="search"> -->
+      <div class="nav-items">
+        <img src="/pics/Home-01-128.png" class="icon" alt="">
+        <img src="/pics/9246646.png" class="icon" alt="">
+        <img src="/pics/plusss.png" class="icon" alt="">
+        <img src="/pics/9806956.png" class="icon" alt="">
+        <img src="/pics/png-transparent-computer-icons-heart-add-to-cart-button-love-heart-sign-thumbnail.png"
+          class="icon" alt="">
+        <div class="icon user-profile"></div>
+        <!-- Light/Dark Mode Toggle -->
+        <button id="Login" class="btn">Login/</button>
+
+        <button id="SignUp" class="btn">SignUp</button>
+      </div>
+  </nav>
+
+
+
+  <!-- PROFILE -->
+  <header>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="/pics/Retro Niki Lauda Print.jpg" alt="" style="width: 152px; height: 152px; border: 2px solid #000000;">
+        </div>
+
+        <div class="profile-user-settings">
+          <h1 class="profile-user-name">FaTNeeK_</h1>
+          <button class="btn profile-edit-btn">Edit Profile</button>
+          <button class="btn profile-settings-btn" aria-label="profile settings" id="settingsButton"><i class="fas fa-cog" aria-hidden="true"></i></button>
+          <!-- Settings Dialog Box -->
+          <div id="settingsDialog" class="dialog">
+            <div class="dialog-content">
+              <span class="dialog-close" onclick="closeDialog()">&times;</span>
+              <ul class="dialog-menu">
+                <li><a href="#">Apps and Websites</a></li>
+                <li><a href="#">QR Code</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Settings and Privacy</a></li>
+                <li><a href="#">Supervision</a></li>
+                <li><a href="#">Login Activity</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#" onclick="closeDialog()">Cancel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-stats">
+          <ul>
+            <li><span class="profile-stat-count">12</span> posts</li>
+            <li><span class="profile-stat-count">538</span> followers</li>
+            <li><span class="profile-stat-count">550</span> following</li>
+          </ul>
+        </div>
+
+        <div class="profile-bio">
+          <p><span class="profile-real-name">Yeh apna official hai 🛀</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- STORIE COVER PHOTOS -->
+  <ul class="stories">
+    <li class="story-item" data-story="1">
+      <div class="image">
+        <img src="/pics/Concert1.jpg" />
+      </div>
+      <div class="title">MOMENTS</div>
+    </li>
+    <li class="story-item" data-story="2">
+      <div class="image">
+        <img src="/pics/hill1.jpg" />
+      </div>
+      <div class="title">Best</div>
+    </li>
+    <li class="story-item" data-story="3">
+      <div class="image">
+        <img src="/pics/kick1.jpg" />
+      </div>
+      <div class="title">KICKS👟</div>
+    </li>
+    <li class="story-item" data-story="4">
+      <div class="image">
+        <img src="/pics/dark.jpg" />
+      </div>
+      <div class="title">Dark Universe</div>
+    </li>
+  </ul>
+
+
+
+  <!-- POSTED PICTURE -->
+  <main>
+
+    <div class="container">
+
+      <div class="gallery">
+
+        <div class="gallery-item" tabindex="0">
+          <img src="/pics/Kanye West Graduation Poster.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 233</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 72</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/download.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 119</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 85</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/8ace8c89-b648-4f8a-a9cf-7821732a60f1.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 142</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 51</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/fe055541-a81b-4617-a7a0-93942b874954.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 338</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 30</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/Retro Niki Lauda Print.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 447</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 100</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/Tame Impala.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 194</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 30</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/062a84d0-e519-4e1a-a36d-678cb1d0eab3.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 352</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 64</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/d594f4c1-a3f2-48da-825e-1be24bb9bae8.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 266</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 52</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/503f79c9-059b-43ba-a57d-d3ce7c57cd05.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 245</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 50</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/lana ♡.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 334</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 41</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+          
+          <img src="/pics/_SPEEDSTER_ POSTERWORK.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 241</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 60</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="/pics/carti.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-type">
+
+            <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+          </div>
+
+          <div class="gallery-item-info">
+
+            <ul>
+              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart"
+                  aria-hidden="true"></i> 530</li>
+              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment"
+                  aria-hidden="true"></i> 92</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+  </main>
+
+
+
+  <!-- STORIES PHOTOS SLIDESHOW -->
+  <div id="storyModal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(1)">&times;</span>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/pics/concert2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/concert3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/concert4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/concert5.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+  <div id="storyModal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(2)">&times;</span>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/pics/hill2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/hill3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/hill4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/hill5.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+  <div id="storyModal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(3)">&times;</span>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/pics/kicks2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/kick3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/kicks4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/kicks5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/pics/kicks6.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+  <div id="storyModal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(4)">&times;</span>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/pics/dark2.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Initial slide index for each modal
+    let slideIndices = [1, 1, 1, 1];
+
+    // Function to open the modal and show the slides
+    function openModal(storyIndex) {
+      document.getElementById(`storyModal${storyIndex}`).style.display = "block";
+      document.body.classList.add('modal-open'); // Add class to hide navbar and prevent scrolling
+      showSlides(slideIndices[storyIndex - 1], storyIndex);
+    }
+
+    // Function to close the modal
+    function closeModal(storyIndex) {
+      document.getElementById(`storyModal${storyIndex}`).style.display = "none";
+      document.body.classList.remove('modal-open'); // Remove class to restore navbar and scrolling
+    }
+
+    // Function to show the slides
+    function showSlides(n, storyIndex) {
+      let i;
+      let slides = document.getElementById(`storyModal${storyIndex}`).getElementsByClassName("mySlides");
+
+      // Handle wrapping around the slides
+      if (n > slides.length) {
+        slideIndices[storyIndex - 1] = 1; // Restart from the first slide
+      }
+      if (n < 1) {
+        slideIndices[storyIndex - 1] = slides.length; // Go to the last slide
+      }
+
+      // Hide all slides
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      // Display the current slide
+      slides[slideIndices[storyIndex - 1] - 1].style.display = "block";
+
+      // Check if it's the last slide, and if so, close the modal and open the next one
+      if (slideIndices[storyIndex - 1] === slides.length) {
+        setTimeout(() => {
+          closeModal(storyIndex);
+          let nextStoryIndex = storyIndex + 1;
+          if (document.getElementById(`storyModal${nextStoryIndex}`)) {
+            openModal(nextStoryIndex); // Open the next story modal
+          }
+        }, 3000); // Adjust this timeout as needed for the slide duration
+      }
+    }
+
+    // Next/previous controls
+    function plusSlides(n, storyIndex) {
+      showSlides(slideIndices[storyIndex - 1] += n, storyIndex);
+    }
+
+    // Event Listeners for Story Items
+    document.querySelectorAll('.story-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        openModal(item.getAttribute('data-story'));
+      });
+    });
+
+    // Event Listeners for Settings Button
+    document.getElementById('settingsButton').addEventListener('click', function () {
+      document.getElementById('settingsDialog').style.display = 'block';
+    });
+
+    // Close Dialog Function
+    function closeDialog() {
+      document.getElementById('settingsDialog').style.display = 'none';
+    }
+
+    // Close Modal when clicking outside of it
+    window.onclick = function (event) {
+      if (event.target.classList.contains('modal')) {
+        closeModal(1); // Replace with appropriate story index if multiple modals
+      }
+    };
+     // Event Listeners for Story Items
+     document.querySelectorAll('.story-item').forEach((item, index) => {
+      item.addEventListener('click', () => {
+        openModal(index + 1); // Open the modal corresponding to the clicked story
+      });
+    });
+
+    // Function to open the modal and show the slides
+    function openModal(storyIndex) {
+      document.getElementById(`storyModal${storyIndex}`).style.display = "block";
+      document.body.classList.add('modal-open'); // Add class to hide navbar and prevent scrolling
+      showSlides(slideIndices[storyIndex - 1], storyIndex);
+    }
+
+    // Function to close the modal
+    function closeModal(storyIndex) {
+      document.getElementById(`storyModal${storyIndex}`).style.display = "none";
+      document.body.classList.remove('modal-open'); // Remove class to restore navbar and scrolling
+    }
+
+    // Function to show the slides
+    function showSlides(n, storyIndex) {
+      let slides = document.getElementById(`storyModal${storyIndex}`).getElementsByClassName("mySlides");
+
+      if (n > slides.length) {
+        slideIndices[storyIndex - 1] = 1;
+      }
+      if (n < 1) {
+        slideIndices[storyIndex - 1] = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndices[storyIndex - 1] - 1].style.display = "block";
+    }
+
+    // Next/previous controls
+    function plusSlides(n, storyIndex) {
+      showSlides(slideIndices[storyIndex - 1] += n, storyIndex);
+    }
+  </script>
+</body>
+
+</html>

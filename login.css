@@ -130,7 +130,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #1e1e1e, #262626);
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
