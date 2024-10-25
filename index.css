@@ -34,6 +34,7 @@ body {
   width: 360px;
   border-right: 1px solid #272a3a;
   display: flex;
+  margin-left: -5rem;
   flex-direction: column;
   transition: 0.3s;
   background-color: #151728;
