@@ -34,6 +34,9 @@ body {
   margin-top: -3rem ;
 }
 
+.left{
+  position: static;
+}
 .side-title {
   font-family: "Lexend Zetta", sans-serif;
   color: #454ba1;
@@ -44,12 +47,14 @@ body {
 }
 
 .side-wrapper {
+  position: static;
   padding: 30px;
   width: 200px;
-  /* height: 100%; */
+  height: 175rem;
   background-color: #0d0f1a;
   padding-top: 12rem;
   margin-top: -5rem;
+  z-index: 100;
 }
 
 .side-menu {
@@ -58,6 +63,8 @@ body {
   font-size: 15px;
   white-space: nowrap;
   margin-top: 3rem;
+  position: static;
+
 }
 
 .side-menu a {
@@ -122,6 +129,7 @@ img {
   max-width: 93.5rem;
   margin: 0 auto;
   padding: 0 2rem;
+
 }
 
 .btn {
@@ -428,6 +436,10 @@ img {
   }
 
   @media (max-width: 40rem) {
+    .left{
+      display: none;
+    }
+  
     .profile {
       grid-template-columns: auto 1fr;
       grid-row-gap: 1.5rem;
@@ -464,7 +476,7 @@ img {
     right: 20px;
   }
 
-}
+
 
 .story-item .image {
   padding: 3px;
@@ -478,8 +490,15 @@ img {
   height: 77px;
   display: block;
 }
-
+}
 @media only screen and (max-width: 735px) {
+  .left{
+    display: none;
+  }
+
+  .stories{
+    margin-left: 50px;
+  }
   .story-item .image img {
     width: 56px;
     height: 56px;
@@ -498,12 +517,18 @@ img {
 }
 
 @media only screen and (max-width: 735px) {
+  .left{
+    display: none;
+  }
   .story-item .title {
     font-size: 12px;
     padding-top: 8px;
     font-weight: 400;
     width: 65px;
   }
+}
+.stories{
+  margin-left: 50px;
 }
 
 .story-item {
@@ -533,6 +558,9 @@ img {
     padding: 0px;
     margin-bottom: 21px;
   }
+}
+.stories{
+  margin-left: 50px;
 }
 
 .slider-button-next {
@@ -679,7 +707,7 @@ img {
 }
 
 
-Ensure .nav-wrapper spans the full width of the screen and positions relative
+/* Ensure .nav-wrapper spans the full width of the screen and positions relative */
 .nav-wrapper {
   display: flex;
   align-items: center;
