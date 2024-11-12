@@ -48,13 +48,15 @@ body {
 
 .side-wrapper {
   position: static;
-  padding: 30px;
+  padding: 250px;
   width: 200px;
   height: 175rem;
   background-color: #0d0f1a;
   padding-top: 12rem;
   margin-top: -5rem;
   z-index: 100;
+  padding-left: 3rem;
+
 }
 
 .side-menu {
@@ -242,13 +244,13 @@ img {
 /* stories section */
 
 .stories{
-  margin-left: 12rem;
+  margin-left: 28rem;
   /* margin-bottom: 8rem; */
   scrollbar-width: none;
 }
 
 .story-item {
-  margin-right: 7rem;
+  margin-right: 6rem;
 }
 
 
@@ -480,6 +482,7 @@ img {
 
 .story-item .image {
   padding: 3px;
+  margin-left: 10rem;
   border-radius: 1000px;
   border: 1px solid hsl(0, 0%, 86%);
 }
@@ -512,6 +515,7 @@ img {
   text-align: center;
   white-space: nowrap;
   width: 80px;
+  margin-left: 10rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Notifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="styles.css"> -->
      <style>
         /* General Reset */
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    /* font-size: 15px; */
     /* box-sizing: border-box; */
 }
 
@@ -28,23 +32,33 @@ body {
 /* Notification Container */
 .notification-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     background: #20202e;
     padding: 30px;
+    padding-top: 0px;
     border-radius: 20px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
-    animation: fadeInUp 1.5s ease;
+    margin-left: 30rem;
+    margin-top: 44rem;
+    /* animation: fadeInUp 1.5s ease; */
 }
 
 /* Title Styling */
 .notification-title {
 
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    margin-top: 40px;
-    text-align: center;
+    font-size: 2rem;
+    /* margin-bottom: 30px; */
+    margin-top: -3rem;
+    margin-left: 17rem;
+    /* text-align: center; */
     color: #ffffff;
     letter-spacing: 1.5px;
+    position: fixed;
+}
+
+.notification-title>hr{
+    width: 40rem;
+    margin-left: -13rem;
 }
 
 /* Notification List */
@@ -56,6 +70,7 @@ body {
 
 /* Notification Item */
 .notification-item {
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -103,6 +118,68 @@ body {
     color: #888;
 }
 
+.left{
+  position: static;
+}
+.side-title {
+  font-family: "Lexend Zetta", sans-serif;
+  color: #454ba1;
+  font-size: 15px;
+  font-weight: 600;
+  /* margin-bottom: 20px; */
+  /* margin-top: -2rem; */
+  margin-left: 8rem;
+  position: static;
+  z-index: 3;
+  margin-top: 8rem;
+}
+
+.side-wrapper {
+  position: absolute;
+  /* padding: 250px; */
+  width: 350px;
+  height: 120rem;
+  background-color: #0d0f1a;
+  /* padding-top: 12rem; */
+  /* margin-top: -5rem; */
+  z-index: 1;
+  margin-top: -22rem;
+  /* padding-left: 3rem; */
+  margin-left: -48rem;
+
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 100;
+  padding-left: 130px;
+  /* margin-left: -33REM; */
+
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.side-menu a:hover {
+  color: cyan;
+  text-shadow: 0px 0px 5px cyan;
+}
+
+.side-menu a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -139,52 +216,115 @@ body {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
+
+    
 }
 
      </style>
 </head>
 <body>
+    <div class="left" style="background-color: #151728; box-shadow: 0px 0px 10px #0c0101; position:absolute; margin-top: -5.6rem; z-index: 0;">
+        <div class="side-wrapper">
+          <div class="side-title">MENU</div>
+          <div class="side-menu">
+            <a href="./index.html">
+            
+              Feed
+            </a>
+            <a href="./reels.html">
+              Reels
+            </a>
+            <a href="./explore.html">
+              Explore
+            </a>
+            <a href="./messages.html">
+              Messages
+            </a>
+            <a href="./notii.html">
+              Notifications
+            </a>
+            <a style="color: cyan; text-shadow: 0px 0px 5px cyan;" href="./Instagram Profile Page.html">
+              Profile 
+            </a>
+          </div>
+        </div> 
+      </div>
     <div class="notification-container">
-        <h1 class="notification-title">Notifications</h1> <hr> <br>
+        <h1 class="notification-title">Notifications<hr></h1> <br>
         <div class="notification-list">
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
-                <p class="notification-text">User1 liked your photo.</p>
+                <p class="notification-text">swami Ji liked your photo.</p>
                 <span class="notification-time">2h ago</span>
             </div>
             <div class="notification-item">
-                <div class="user-avatar"><img src="./img/avatar4.jpg" alt=""></div>
-                <p class="notification-text">User4 started following you.</p>
+                <div class="user-avatar"><img src="./img/avatar2.jpg" alt=""></div>
+                <p class="notification-text">Abhinav Vats started following you.</p>
                 <span class="notification-time">5h ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar3.png" alt=""></div>
-                <p class="notification-text">User7 mentioned you in a comment.</p>
+                <p class="notification-text">Meow Meow mentioned you in a comment.</p>
                 <span class="notification-time">1d ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
-                <p class="notification-text">User9 tagged you in a post.</p>
+                <p class="notification-text">PuneVlogs tagged you in a post.</p>
                 <span class="notification-time">2d ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar2.jpg" alt=""></div>
-                <p class="notification-text">User6 sent you a direct message.</p>
+                <p class="notification-text">Ayush sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar3.png" alt=""></div>
-                <p class="notification-text">User3 shared your story.</p>
+                <p class="notification-text">rocky shared your story.</p>
                 <span class="notification-time">5d ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar2.jpg" alt=""></div>
-                <p class="notification-text">User6 sent you a direct message.</p>
+                <p class="notification-text">Singh sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
             <div class="notification-item">
                 <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
-                <p class="notification-text">User6 sent you a direct message.</p>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
+                <span class="notification-time">3d ago</span>
+            </div>
+            <div class="notification-item">
+                <div class="user-avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <p class="notification-text">PromotionForFree sent you a direct message.</p>
                 <span class="notification-time">3d ago</span>
             </div>
         </div>

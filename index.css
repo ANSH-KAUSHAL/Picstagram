@@ -42,6 +42,7 @@ body {
   flex-shrink: 0;
 }
 
+
 @media screen and (max-width: 930px) {
   .left-side.active {
     z-index: 4;
