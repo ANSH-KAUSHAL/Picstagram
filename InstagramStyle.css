@@ -253,6 +253,10 @@ img {
   margin-right: 6rem;
 }
 
+.story-item:hover{
+  color: cyan;
+  text-shadow: 0px 0px 10px;
+}
 
  /* gallery */
 
