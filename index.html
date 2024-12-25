@@ -15,7 +15,8 @@
     <div class="signup-box">
       <div class="signup-form">
         <h1 class="signup-title">Create Account</h1>
-        <form id="signup-form">
+        <form id="signup-form"  action="/submit" 
+        method="POST" >
           <input type="text" id="first-name" placeholder="First Name" class="signup-input" required>
           <input type="text" id="last-name" placeholder="Last Name" class="signup-input" required>
           <input type="text" id="username" placeholder="Username" class="signup-input" required>
@@ -31,6 +32,50 @@
     </div>
   </div>
 
-  <script src="index.js"></script>
+  <!-- <script src="index.js"></script> -->
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevents default form submission
+
+        // Corrected variable names to match HTML IDs
+        const firstName = document.getElementById("first-name").value; // Corrected name to 'firstName'
+        const lastName = document.getElementById("last-name").value; // Corrected name to 'lastName'
+        const username = document.getElementById("username").value;
+        const dob = document.getElementById("dob").value; // Added 'dob' to match the HTML field
+        const phone = document.getElementById("input").value; // Corrected to match 'input' ID
+        const password = document.getElementById("password").value;
+
+        // Prepare the data to send
+        const formData = {
+            firstName: firstName,  // Updated key to match 'firstName'
+            lastName: lastName,    // Updated key to match 'lastName'
+            username: username,
+            dob: dob,              // Added 'dob' to formData
+            phone: phone,
+            password: password
+        };
+
+        // Send the data to the server via fetch
+        fetch('http://localhost:4013/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData) // Send form data as JSON
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // ALERT
+            alert("Signup successful!");
+            document.getElementById("signup-form").reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Signup failed. Please try again.");
+        });
+    });
+</script>
+
 </body>
 </html>
