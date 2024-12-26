@@ -16,6 +16,11 @@ body {
   overflow: hidden;
   background-color: #151728;
 }
+#backvid {
+  height: 125%;
+  position: fixed;
+  z-index: -100;
+}
 
 /* Signup Container */
 .signup-container {
