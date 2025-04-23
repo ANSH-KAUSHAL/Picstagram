@@ -1,52 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Picstagram</title>
 
-  <link rel="stylesheet" href="login.css">
-  
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  
   <div class="login-container">
-      <div class="login-box">
-        <!-- <div class="leftimg">
-          <img src="./img/sexy.jpg" alt="">
-          <img src="./img/brown.jpg" alt="">
-          <img src="./img/professional.JPG" alt="">
-          <img src="./img/shadi.jpg" alt="">
-        </div> -->
-        <div class="carousel-container">
-          <div class="carousel">
-              <img src="./img/login1.png" alt="Image 1">
-              <img src="./img/login2.png" alt="Image 2">
-              <img src="./img/login3.png" alt="Image 3">
-              <img src="./img/login4.png" alt="Image 4">
-          </div>
-      </div>
-        <div class="login-form">
-          <h1 class="login-title">Picstagram</h1>
-          <form action="#">
-              <input type="text" placeholder="Username" class="login-input" required>
-              <input type="password" placeholder="Password" class="login-input pass" required>
-              <button type="submit" class="login-button"><a href="./feed.html">Log In</a></button>
-              <p class="forgot-password"><a href="#">Forgot password?</a></p>
-          </form>
-          <br>
-          <a href="index.html">Sign up?</a>
+    <div class="login-box">
+      <div class="carousel-container">
+        <div class="carousel">
+          <img src="./img/login1.png" alt="Image 1">
+          <img src="./img/login2.png" alt="Image 2">
+          <img src="./img/login3.png" alt="Image 3">
+          <img src="./img/login4.png" alt="Image 4">
         </div>
-
       </div>
-      <hr style="color: white; background-color: white;">
-    
+
+      <div class="login-form">
+        <h1 class="login-title">Picstagram</h1>
+        <form id="login-form" action="#">
+          <input type="text" id="username" placeholder="Username" class="login-input" required>
+          <input type="password" id="password" placeholder="Password" class="login-input pass" required>
+          <button type="submit" class="login-button">Log In</button>
+          <div id="error1" class="error-message"></div>
+        </form>
+        <p class="forgot-password"><a href="#">Forgot password?</a></p>
+        <br />
+        <a href="index.html">Sign up?</a>
+      </div>
+    </div>
   </div>
+
   <script src="login.js"></script>
 </body>
 </html>

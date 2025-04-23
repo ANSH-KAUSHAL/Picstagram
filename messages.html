@@ -106,5 +106,45 @@
       </div>
     </div>
   </div>
+  <script>
+    async function sendMessage() {
+      const input = document.querySelector(".message-input input");
+      const text = input.value.trim();
+      if (!text) return;
+  
+      const messageData = {
+        sender: "me", // Or fetch from local storage if logged in
+        text: text,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+  
+      await fetch("http://localhost:4099/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(messageData)
+      });
+  
+      input.value = "";
+      loadMessages();
+    }
+  
+    async function loadMessages() {
+      const res = await fetch("http://localhost:4099/messages");
+      const messages = await res.json();
+      const chatBox = document.querySelector(".chat-box");
+      chatBox.innerHTML = "";
+      messages.forEach(msg => {
+        const div = document.createElement("div");
+        div.className = "message " + (msg.sender === "me" ? "sent" : "received");
+        div.innerHTML = `<p>${msg.text}</p><span>${msg.time}</span>`;
+        chatBox.appendChild(div);
+      });
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  
+    document.querySelector(".message-input button").addEventListener("click", sendMessage);
+    window.onload = loadMessages;
+  </script>
+  
 </body>
 </html>

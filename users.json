@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "firstName": "Money",
+    "lastName": "Kaun",
+    "username": "Money",
+    "dob": "27-08-2005",
+    "phone": "9876543210",
+    "password": "securepass123"
+  },
+  {
+    "id": 2,
+    "firstName": "AAROHI",
+    "lastName": "DIXIT",
+    "username": "aarohidixit",
+    "dob": "2006-08-31",
+    "phone": "8006658900",
+    "password": "aarohidixit"
+  },
+  {
+    "id": 3,
+    "firstName": "money",
+    "lastName": "kaun",
+    "username": "money_kaun",
+    "dob": "2006-08-31",
+    "phone": "8006658900",
+    "password": "moneyhai"
+  }
+]

@@ -1,45 +1,27 @@
-let currentIndex = 0;
-const carousel = document.querySelector('.carousel');
-const images = document.querySelectorAll('.carousel img');
-const totalImages = images.length;
+document.getElementById("login-form").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-function showNextImage() {
-    currentIndex++;
-    if (currentIndex >= totalImages) {
-        currentIndex = 0;
-    }
-    const offset = -currentIndex * 300; // 300px is the width of each image
-    carousel.style.transform = `translateX(${offset}px)`; // Change to translateX for horizontal sliding
-}
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-setInterval(showNextImage, 3000); // Change image every 3 seconds
-
-document.addEventListener("DOMContentLoaded", function () {
-    let form = document.getElementById("login-form");
-    let errorDiv = document.getElementById("error1");
-  
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-  
-      const usernameInput = document.querySelector(".login-input").value;
-      const passwordInput = document.querySelector(".pass").value;
-  
-      const storedUserData = JSON.parse(localStorage.getItem("userData"));
-  
-      if (storedUserData) {
-        if (
-          storedUserData.username === usernameInput &&
-          storedUserData.password === passwordInput
-        ) {
-          alert("Login successful!");
-          window.location.href = "feed.html";
-        } else {
-          errorDiv.innerText =
-            "Incorrect username or password. Please try again.";
-        }
+  fetch("http://localhost:4099/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ username, password })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.message === "Login successful!") {
+        alert("Login successful!");
+        window.location.href = "feed.html";
       } else {
-        errorDiv.innerText = "No user found. Please sign up first.";
+        document.getElementById("error1").innerText = data.message;
       }
+    })
+    .catch(err => {
+      document.getElementById("error1").innerText = "Something went wrong.";
+      console.error(err);
     });
-  });
-  
+});
