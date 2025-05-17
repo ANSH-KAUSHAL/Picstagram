@@ -1,10 +1,10 @@
-// ✅ Full working app.js with safe JSON parse for messages
+
 
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
-const fs = require("fs");
+const fs = require("fs"); 
 
 const app = express();
 const port = 4099;
@@ -12,19 +12,17 @@ const port = 4099;
 const userFilePath = path.join(__dirname, "users.json");
 const likesFile = path.join(__dirname, "likes.json");
 const messagesFile = path.join(__dirname, "messages.json");
-
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
-// Ensure required files exist
+
 if (!fs.existsSync(userFilePath)) fs.writeFileSync(userFilePath, "[]", "utf8");
 if (!fs.existsSync(likesFile)) fs.writeFileSync(likesFile, "{}", "utf8");
 if (!fs.existsSync(messagesFile)) fs.writeFileSync(messagesFile, "[]", "utf8");
 
-// Routes
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
@@ -107,7 +105,7 @@ app.post("/unlike", (req, res) => {
   res.json({ message: "Post unliked", likes: likes[postId]?.length || 0 });
 });
 
-// 💬 Chat Message API (Safe JSON Handling)
+
 app.get("/messages", (req, res) => {
   let messages = [];
   try {
@@ -136,7 +134,6 @@ app.post("/messages", (req, res) => {
   res.json({ message: "Message saved!" });
 });
 
-// Start server
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
 });

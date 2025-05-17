@@ -25,5 +25,23 @@
     "dob": "2006-08-31",
     "phone": "8006658900",
     "password": "moneyhai"
+  },
+  {
+    "id": 4,
+    "firstName": "ansh",
+    "lastName": "kaushal",
+    "username": "anshkaushal",
+    "dob": "2005-04-12",
+    "phone": "8006658900",
+    "password": "anshkaushalhai"
+  },
+  {
+    "id": 5,
+    "firstName": "gurnimarjit",
+    "lastName": "singh",
+    "username": "gurnimar09",
+    "dob": "2004-10-09",
+    "phone": "9872234497",
+    "password": "gurnimar"
   }
 ]
