@@ -43,5 +43,14 @@
     "dob": "2004-10-09",
     "phone": "9872234497",
     "password": "gurnimar"
+  },
+  {
+    "id": 6,
+    "firstName": "Ramesh",
+    "lastName": "Garg",
+    "username": "ramesh_2233",
+    "dob": "2001-02-12",
+    "phone": "7889976547",
+    "password": "ramesh@picstagram"
   }
 ]
